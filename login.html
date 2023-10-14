@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .fixed-button {
+            position: fixed;
+            bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+            right: 20px; /* Ajusta la distancia desde la parte derecha */
+        }
+
+        .transparent-button {
+            background-color: rgba(255, 255, 255, 0); /* Botón transparente */
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <button type="submit" class="fixed-button transparent-button" id="openChatbot">
+        <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/FA5252/message-bot.png" alt="message-bot"/>
+    </button>
+
+    <script>
+        document.getElementById("openChatbot").addEventListener("click", function() {
+            // Abre el chatbot en una nueva ventana emergente
+            window.open("index.html", "Chatbot", "width=400,height=600");
+        });
+    </script>
+</body>
+</html>

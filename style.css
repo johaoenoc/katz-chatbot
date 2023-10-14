@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 370px;
+}
+
+.wrapper .title {
+    background: #ff0f4f;
+    color: white;
+    line-height: 2.5;
+    border-radius: 5px 5px 0 0;
+    
+    font-size: 20px;
+}
+.title {
+    background: #ff2054;
+    color: white;
+    line-height: 2.5;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto e imagen */
+}
+.cora .profile-image{
+    width: 40px; /* Tamaño de la imagen de perfil */
+    height: 40px;
+    border-radius: 50%; /* Crea un efecto de círculo */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+
+}
+.title .profile-image {
+    width: 40px; /* Tamaño de la imagen de perfil */
+    height: 40px;
+    border-radius: 50%; /* Crea un efecto de círculo */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+}
+
+.wrapper .box {
+    border: 1px solid #efefef;
+    padding: 10px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: scroll; /* Agregado para desplazamiento vertical */
+}
+
+.wrapper .box .item {
+    display: flex;
+    margin: 10px 0;
+}
+
+.wrapper .box .item .icon {
+    background: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.wrapper .box .item .msg {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    background: #ff0f4f;
+    color: #efefef; /* Para evitar que los mensajes sean demasiado anchos */
+}
+
+.wrapper .box .item .msg p {
+    margin: 0; /* Elimina el margen predeterminado en los párrafos */
+}
+
+.wrapper .box .item.right {
+    justify-content: flex-end; /* Alinea los mensajes del usuario a la derecha */
+}
+
+.wrapper .box .item.right .msg {
+    background: #efefef;
+    color: #333;
+}
+
+.wrapper .typing-area {
+    width: 100%;
+    background: #efefef;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrapper .typing-area .input-field {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .typing-area .input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    padding-right: 70px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.wrapper .typing-area .input-field input:focus {
+    border-color: #ff0f4f;
+}
+
+.wrapper .typing-area .input-field button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 1px solid #ff0f4f;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #ff0f4f;
+    outline: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.wrapper .typing-area .input-field button:hover {
+    background: #ff0f4f;
+    color: white;
+}
+
+.wrapper .typing-area .input-field input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
