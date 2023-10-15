@@ -42,7 +42,7 @@ function simularEscribiendo() {
 
         // Llama a chatbotMessage con el mensaje real
         chatbotMessage("¡Hola! Soy Katz, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedes escribir palabras clave como 'vpn', 'gmail', 'okta' y más, y te proporcionaré respuestas útiles. Estoy listo para asistirte.");
-    }, 3000); // Retraso de 3 segundos
+    }, 9000); // Retraso de 3 segundos
 }
 
 // Simulación de escritura antes del mensaje inicial
