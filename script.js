@@ -41,7 +41,7 @@ function simularEscribiendo() {
         messageSound.play();
 
         // Llama a chatbotMessage con el mensaje real
-        chatbotMessage("¡Hola! Soy Katz, ¿En qué puedo ayudarte?");
+        chatbotMessage("¡Hola! Soy Katz, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedes escribir palabras clave como 'vpn', 'gmail', 'okta' y más, y te proporcionaré respuestas útiles. Estoy listo para asistirte.");
     }, 3000); // Retraso de 3 segundos
 }
 
@@ -80,7 +80,12 @@ function botResponse(userInput) {
     return "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.";
   } else if (userInput.includes("pc") || userInput.includes("jumpcloud")) {
     return "Si tienes problemas para acceder a la pc, tenemos estas guias para la autegestion desde Jumpcloud:<br><br><ul><li> <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu/jumpcloud-cambio-de-contrase%C3%B1a?pli=1&authuser=1' target='_blank'>Cambio de contraseña en Jumpcloud</a></li><br><li> <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/autenticaci%C3%B3n-en-2-pasos-jumpcloud?pli=1&authuser=1' target='_blank'>Activar Doble Autenticacion</a>.</li></ul>";
-  } else {
+  } 
+  else if (userInput.includes("katz") || userInput.includes("Katz")) {
+    return "<img src='Katz.png' width=80 alt='Descripción de la imagen'>"
+    
+  }
+    else {
     return "Lo siento, no entiendo tu pregunta.";
   }
 

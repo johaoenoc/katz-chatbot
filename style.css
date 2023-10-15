@@ -152,3 +152,30 @@ body {
     opacity: 1;
     pointer-events: auto;
 }
+.status {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+    margin-top: 30px; 
+    
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .text {
+    color: rgb(236, 192, 192);
+    font-size: 9px; /* Ajusta el tamaño de fuente según tus preferencias */
+    
+  }
+  
+  
+  
+  
+  
+  
