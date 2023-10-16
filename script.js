@@ -25,7 +25,7 @@ function simularEscribiendo() {
             <img class="profile-image" src="Katz.png" alt="Profile Image">
         </div>
         <div class="msg">
-            <p>Katz esta escribiendo...</p>
+            <p><strong><span class="dots">...</span></strong></p>
         </div>
     `;
 

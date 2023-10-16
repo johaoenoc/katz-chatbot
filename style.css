@@ -173,6 +173,31 @@ body {
     font-size: 9px; /* Ajusta el tamaño de fuente según tus preferencias */
     
   }
+  @keyframes dot-animation {
+    0% {
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplica la animación a la clase "dots" */
+   .dots {
+    color: bisque;
+    animation: dot-animation 1.5s infinite;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2px;
+  }
+  
   
   
   
