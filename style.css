@@ -78,7 +78,7 @@ body {
 .wrapper .box .item .msg {
     padding: 10px;
     border-radius: 10px;
-    max-width: 70%;
+    max-width: 90%;
     background: #ff0f4f;
     color: #efefef; /* Para evitar que los mensajes sean demasiado anchos */
 }

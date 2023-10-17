@@ -135,7 +135,7 @@ function botResponse(userInput) {
   }
 
   // Si no hay una autorespuesta definida, muestra la respuesta predeterminada sin retraso
-  addMessage("bot", "Lo siento, no entiendo tu pregunta.");
+  addMessage("bot", "Lo siento, no comprendo tu pregunta, pero es posible que encuentres lo que necesitas en nuestra sección de 'Instructivos', donde tenemos una amplia variedad de guías disponibles. <br><img src='instructivos.jpg' width=250><br> Puedes acceder directamente a ellas a través de <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos?authuser=1'target='_blank'>este enlace</a>");
 }
 
 
