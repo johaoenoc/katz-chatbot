@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .wrapper {
+            background-image: url('wallpaper_2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
     <title>Portal IT Chatbot</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="title">
             <img class="profile-image" src="Katz.png" alt="Profile Image">
-            Katz 
+            Katz
             <div class="status">
                 <span class="dot"></span>
                 <span class="text">En línea</span>
-              </div>
-              
             </div>
-            
+
+        </div>
+
         <div class="box" id="chat-content">
             <!-- Los mensajes del chat se agregarán aquí dinámicamente -->
             <br clear="both">
@@ -27,7 +37,7 @@
 
         <div class="typing-area">
             <div class="input-field">
-                <input type="text" id="user-input" placeholder="Type your message" required>
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje..." required>
                 <button type="submit" id="send-button">Send</button>
             </div>
         </div>
@@ -35,8 +45,9 @@
     <audio id="typingSound" src="typing_messenger.mp3" preload="auto" type="audio/mpeg"></audio>
     <audio id="messageSound" src="iphone_noti.mp3" preload="auto" type="audio/mpeg"></audio>
     <audio id="sendSound" src="enviar.wav" preload="auto" type="audio/wav"></audio>
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>

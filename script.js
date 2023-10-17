@@ -91,7 +91,7 @@ function botResponse(userInput) {
     },
     {
       keywords: ["okta", "sso"],
-      respuesta: { mensaje: "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.", delay: 3000 }
+      respuesta: { mensaje: "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.<br> También tenemos estas opciones para autogestionarte manualmente<br><img src='okta.jpg' width='250' style='border-radius:10px'><br> Te dejo estas guias en este <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/okta-sso?authuser=1' target0'_blank'>este enlace</a>", delay: 3000 }
     },
     {
       keywords: ["pc", "jumpcloud"],
