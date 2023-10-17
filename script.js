@@ -80,7 +80,7 @@ function botResponse(userInput) {
       respuesta: { mensaje: "Claro, ¿en qué puedo ayudarte?", delay: 3000 }
     },
     {
-      keywords: ["gmail", "correo"],
+      keywords: ["gmail", "correo", "Gmail"],
       respuesta: { mensaje: "Todo lo que necesites con respecto a Gmail lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.", delay: 3000 }
     },
     {
