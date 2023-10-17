@@ -190,12 +190,12 @@ body {
   
   /* Aplica la animación a la clase "dots" */
    .dots {
-    color: bisque;
+    
     animation: dot-animation 1.5s infinite;
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
-    margin-top: 2px;
+    
+   
+    
+  
   }
   
   

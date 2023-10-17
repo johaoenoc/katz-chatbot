@@ -25,7 +25,8 @@ function simularEscribiendo() {
             <img class="profile-image" src="Katz.png" alt="Profile Image">
         </div>
         <div class="msg">
-            <p><strong><span class="dots">...</span></strong></p>
+            <p><span class="dots">Katz está escribiendo...</span></p>
+            
         </div>
     `;
 
@@ -63,24 +64,25 @@ function addMessage(user, message) {
   messageText.innerHTML = `<p>${message}</p>`;
   messageElement.appendChild(messageText);
   chatContent.appendChild(messageElement);
+   // Haz scroll hacia abajo para mostrar el último mensaje
+   chatContent.scrollTop = chatContent.scrollHeight;
+  
 }
 
 function botResponse(userInput) {
   // Convierte la entrada del usuario a minúsculas para que la búsqueda sea insensible a mayúsculas y minúsculas
   const userInputLower = userInput.toLowerCase();
+  
 
   // Define las autorespuestas y sus respectivos retrasos en un objeto
   const autorespuestas = [
+   
     {
-      keywords: ["hola", "HOLA", "HOLA!", "HOLA "],
-      respuesta: { mensaje: "¡Hola! ¿En qué puedo ayudarte?", delay: 3000 }
-    },
-    {
-      keywords: ["ayuda", "AYUDA"],
+      keywords: ["ayuda"],
       respuesta: { mensaje: "Claro, ¿en qué puedo ayudarte?", delay: 3000 }
     },
     {
-      keywords: ["gmail", "correo", "Gmail"],
+      keywords: ["gmail", "correo"],
       respuesta: { mensaje: "Todo lo que necesites con respecto a Gmail lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.", delay: 3000 }
     },
     {
@@ -96,9 +98,26 @@ function botResponse(userInput) {
       respuesta: { mensaje: "Si tienes problemas para acceder a la pc, tenemos estas guias para la autegestion desde Jumpcloud:<br><br><ul><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu/jumpcloud-cambio-de-contrase%C3%B1a?pli=1&authuser=1' target='_blank'> Cambio de contraseña en Jumpcloud</a></li><br><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/autenticaci%C3%B3n-en-2-pasos-jumpcloud?pli=1&authuser=1' target='_blank'> Activar Doble Autenticacion</a>.</li></ul>", delay: 3000 }
     },
     {
+      keywords: ["inconcert", "telefonia"],
+      respuesta: { mensaje: "Para verificar todo con respecto a nuestra Telefonia Virtual (Inconcert) lo puedes ver en la guia que te dejaré en este <a href='https://sites.google.com/pedidosya.com/itsupport/telefon%C3%ADa-virtual?authuser=1I' target='_blank'>enlace</a> ", delay: 3000 }
+    },
+    {
+      keywords: ["zoom"],
+      respuesta: {mensaje: "Para zoom tenemos guias en <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/zoom?authuser=1' target='_blank'>este enlace</a>", delay: 3000 }
+    },
+    {
+      keywords: ["slack"],
+      respuesta: {mensaje: "Todo lo relacionado con Slack tenemos instructivos en este  <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/c%C3%B3mo-usar-slack-gu%C3%ADa-de-inicio-r%C3%A1pido?authuser=1' target='_blank'>este enlace.</a>", delay: 3000 }
+    },
+    {
+      keywords: ["sap", "power query"],
+      respuesta: {mensaje: "Todo lo relacion con Sap Add In & Power Query tenemos guias en<a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/otros-manuales/power-query-sap-add-in?authuser=1' target='_blank'>este enlace</a>", delay: 3000 }
+    },
+    {
       keywords: ["katz"],
-      respuesta: { mensaje: "<img src='Katz.png' width=80 alt='Descripción de la imagen'>", delay: 3000 }
+      respuesta: {mensaje:"Dime...<iframe src='https://giphy.com/embed/O3A3C7vGBqRnq' width='200' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><p><a href='https://giphy.com/gifs/courage-the-cowardly-dog-katz-O3A3C7vGBqRnq'></a></p>", delay: 3000}
     }
+   
   ];
 
   // Verifica si hay una autorespuesta definida para la entrada del usuario
@@ -107,7 +126,7 @@ function botResponse(userInput) {
       if (userInputLower.includes(keyword)) {
         // Agrega un retraso antes de mostrar la autorespuesta
         setTimeout(() => {
-          addMessage("bot", respuesta.respuesta.mensaje);
+          addMessage("bot", respuesta.respuesta.mensaje);messageSound.play(); 
         }, respuesta.respuesta.delay);
 
         return;
