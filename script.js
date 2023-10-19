@@ -83,27 +83,27 @@ function botResponse(userInput) {
     },
     {
       keywords: ["gmail", "correo"],
-      respuesta: { mensaje: "Todo lo que necesites con respecto a Gmail lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.", delay: 3000 }
+      respuesta: { mensaje: "Te comento que actualmente tenemos al bot Alfred en slack que hace las siguientes funciones:<br><br><ul><li>Restablecer contraseñas</li><li>Obtener Código 2FA</li><li>Consultar Owner de Grupo</li><li>Crear Grupo</li><li>Unise a Grupo</li></ul><br>Para obtener estas funciones puedes activar Alfred desde <a href='https://app.slack.com/client/T052P4KCD/D047UEH4J9M/app' target='_blank'>este enlace</a>", delay: 3000 }
     },
     {
       keywords: ["vpn"],
-      respuesta: { mensaje: "Si tienes problemas con la VPN, recomendamos que primero verifiques la configuracion que esta en <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/acceso-a-vpn?authuser=1'target='_blank'> este enlace </a>.", delay: 3000 }
+      respuesta: { mensaje: "Si tienes problemas con la VPN, recomendamos que primero verifiques la configuracion que esta en<br> <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/acceso-a-vpn?authuser=1'target='_blank'> este enlace.</a>", delay: 3000 }
     },
     {
       keywords: ["okta", "sso"],
-      respuesta: { mensaje: "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.<br> También tenemos estas opciones para autogestionarte manualmente<br><img src='okta.jpg' width='250' style='border-radius:10px'><br> Te dejo estas guias en este <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/okta-sso?authuser=1' target0'_blank'>este enlace</a>", delay: 3000 }
+      respuesta: { mensaje: "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.<br><br> También tenemos estas opciones para autogestionarte manualmente<br><button type='button'><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'><img src='okta.jpg' width='250' style='border-radius:10px'></a></button><br><br> Te dejo estas guias en este <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/okta-sso?authuser=1' target0'_blank'>este enlace.</a>", delay: 3000 }
     },
     {
       keywords: ["pc", "jumpcloud"],
-      respuesta: { mensaje: "Si tienes problemas para acceder a la pc, tenemos estas guias para la autegestion desde Jumpcloud:<br><br><ul><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu/jumpcloud-cambio-de-contrase%C3%B1a?pli=1&authuser=1' target='_blank'> Cambio de contraseña en Jumpcloud</a></li><br><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/autenticaci%C3%B3n-en-2-pasos-jumpcloud?pli=1&authuser=1' target='_blank'> Activar Doble Autenticacion</a>.</li></ul>", delay: 3000 }
+      respuesta: { mensaje: "Si tienes problemas para acceder a la pc, tenemos estas guias para la autegestion desde Jumpcloud:<br><br><ul><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu/jumpcloud-cambio-de-contrase%C3%B1a?pli=1&authuser=1' target='_blank'> Cambio de contraseña en Jumpcloud</a></li><br><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/autenticaci%C3%B3n-en-2-pasos-jumpcloud?pli=1&authuser=1' target='_blank'>Activar Doble Autenticacion</a>.</li></ul>", delay: 3000 }
     },
     {
       keywords: ["inconcert", "telefonia"],
-      respuesta: { mensaje: "Para verificar todo con respecto a nuestra Telefonia Virtual (Inconcert) lo puedes ver en la guia que te dejaré en este <a href='https://sites.google.com/pedidosya.com/itsupport/telefon%C3%ADa-virtual?authuser=1I' target='_blank'>enlace</a> ", delay: 3000 }
+      respuesta: { mensaje: "Para verificar todo con respecto a nuestra Telefonia Virtual (Inconcert) lo puedes ver en la guia que te dejaré en este <a href='https://sites.google.com/pedidosya.com/itsupport/telefon%C3%ADa-virtual?authuser=1I' target='_blank'>enlace.</a> ", delay: 3000 }
     },
     {
       keywords: ["zoom"],
-      respuesta: {mensaje: "Para zoom tenemos guias en <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/zoom?authuser=1' target='_blank'>este enlace</a>", delay: 3000 }
+      respuesta: {mensaje: "Para zoom tenemos guias en <br><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/zoom?authuser=1' target='_blank'>este enlace.</a>", delay: 3000 }
     },
     {
       keywords: ["slack"],
@@ -111,11 +111,15 @@ function botResponse(userInput) {
     },
     {
       keywords: ["sap", "power query"],
-      respuesta: {mensaje: "Todo lo relacion con Sap Add In & Power Query tenemos guias en<a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/otros-manuales/power-query-sap-add-in?authuser=1' target='_blank'>este enlace</a>", delay: 3000 }
+      respuesta: {mensaje: "Todo lo relacionado con Sap Add In & Power Query tenemos guias en<br> <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/otros-manuales/power-query-sap-add-in?authuser=1' target='_blank'>este enlace.</a>", delay: 3000 }
     },
     {
       keywords: ["katz"],
-      respuesta: {mensaje:"Dime...<iframe src='https://giphy.com/embed/O3A3C7vGBqRnq' width='200' frameBorder='0' class='giphy-embed' allowFullScreen></iframe><p><a href='https://giphy.com/gifs/courage-the-cowardly-dog-katz-O3A3C7vGBqRnq'></a></p>", delay: 3000}
+      respuesta: {mensaje:"Dime...<br><iframe src='https://giphy.com/embed/O3A3C7vGBqRnq' width='200' frameBorder='0' class='giphy-embed' allowFullScreen></iframe>", delay: 3000}
+    },
+    {
+    keywords: ["wifi", "peyalocal", "peyaguest","red"],
+    respuesta: {mensaje:"Si tienes problemas para la conexión al Wifi en la oficina tenemos guias en <BR><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/instrucciones-para-conectar-a-las-redes-wi-fi-peya-local-y-peya-guest-y-pro?authuser=1' target='_blank'>este enlace</a> para las redes dependiendo si es usuario interno o invitado.", delay: 3000}
     }
    
   ];
@@ -135,7 +139,7 @@ function botResponse(userInput) {
   }
 
   // Si no hay una autorespuesta definida, muestra la respuesta predeterminada sin retraso
-  addMessage("bot", "Lo siento, no comprendo tu pregunta, pero es posible que encuentres lo que necesitas en nuestra sección de 'Instructivos', donde tenemos una amplia variedad de guías disponibles. <br><img src='instructivos.jpg' width=250><br> Puedes acceder directamente a ellas a través de <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos?authuser=1'target='_blank'>este enlace</a>");
+  addMessage("bot", "Lo siento, no comprendo tu pregunta, pero es posible que encuentres lo que necesitas en nuestra sección de 'Instructivos', donde tenemos una amplia variedad de guías disponibles.<br> <br><img src='instructivos.jpg' width=250><br> Puedes acceder directamente a ellas a través de <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos?authuser=1'target='_blank'>este enlace</a>");
 }
 
 

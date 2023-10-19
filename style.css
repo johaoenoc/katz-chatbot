@@ -13,15 +13,17 @@ body {
     align-items: center;
     min-height: 100vh;
     font-size: small;
+    color: rgb(225, 225, 225);
 }
 
 .wrapper {
     width: 370px;
+    
 }
 
 .wrapper .title {
     background: #ff0f4f;
-    color: white;
+    color: rgb(232, 232, 232);
     line-height: 2.5;
     border-radius: 5px 5px 0 0;
     
@@ -66,22 +68,16 @@ body {
     margin: 10px 0;
 }
 
-.wrapper .box .item .icon {
-    background: #007bff;
-    color: white;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-}
 
 .wrapper .box .item .msg {
-    padding: 10px;
+    padding: 20px;
+    
     border-radius: 10px;
     max-width: 90%;
     background: #ff0f4f;
-    color: #efefef; /* Para evitar que los mensajes sean demasiado anchos */
+    color: #efefef;
+    
+    background-color:   #ff0f4f ;
 }
 
 .wrapper .box .item .msg p {
@@ -95,6 +91,8 @@ body {
 .wrapper .box .item.right .msg {
     background: #efefef;
     color: #333;
+    
+
 }
 
 .wrapper .typing-area {
@@ -197,6 +195,17 @@ body {
    
     
   
+  }
+  a {
+    color: #ff0f4f; /* Color predeterminado */
+    text-decoration: none; /* Quita el subrayado */
+    background-color:#efefef ;
+    padding: 2px;
+    border-radius: 20px;
+  }
+  
+  a:hover {
+    font-weight: bold; /* Hace el texto en negrita al pasar el ratón sobre el enlace */
   }
   
   
