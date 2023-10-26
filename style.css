@@ -27,18 +27,13 @@ body {
     line-height: 2.5;
     border-radius: 5px 5px 0 0;
     
-    font-size: 20px;
-}
-.title {
-    background: #ff2054;
-    color: white;
-    line-height: 2.5;
-    border-radius: 5px 5px 0 0;
-    text-align: center;
-    font-size: 20px;
+    font-size: 16px;
+      text-align: center;
+    
     display: flex;
-    align-items: center; /* Centra verticalmente el texto e imagen */
+    align-items: center; 
 }
+
 .cora .profile-image{
     width: 40px; /* Tamaño de la imagen de perfil */
     height: 40px;
@@ -89,7 +84,7 @@ body {
 }
 
 .wrapper .box .item.right .msg {
-    background: #efefef;
+    background: #ffffff;
     color: #333;
     
 
@@ -154,22 +149,23 @@ body {
 .status {
     display: flex;
     align-items: center;
-    margin-left: -40px;
-    margin-top: 30px; 
+    margin-left: -70px;
+    margin-top: 32px; 
     
   }
   
   .dot {
-    width: 5px;
-    height: 5px;
-    background-color: green;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(130, 228, 130);
     border-radius: 50%;
-    margin-right: 5px;
+    margin-left: 30px;
   }
   
   .text {
     color: rgb(236, 192, 192);
-    font-size: 9px; /* Ajusta el tamaño de fuente según tus preferencias */
+    font-size: 9px;
+    padding-left: 5px; /* Ajusta el tamaño de fuente según tus preferencias */
     
   }
   @keyframes dot-animation {

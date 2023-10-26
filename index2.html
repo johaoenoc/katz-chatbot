@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <style>
       .wrapper {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(238, 238, 238);
         background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
         background-repeat: no-repeat;
       }
@@ -23,7 +23,7 @@
   <body>
     <div class="wrapper">
       <div class="title">
-        <img class="profile-image" src="Katz.png" alt="Profile Image" />
+        <img class="profile-image" src="./img/Katz.png" alt="Profile Image" />
         Katz
         <div class="status">
           <span class="dot"></span>
@@ -44,25 +44,25 @@
             placeholder="Escribe tu mensaje..."
             required
           />
-          <button type="submit" id="send-button">Send</button>
+          <button type="submit" id="send-button">Enviar</button>
         </div>
       </div>
     </div>
     <audio
       id="typingSound"
-      src="typing_messenger.mp3"
+      src="./sound/typing_messenger.mp3"
       preload="auto"
       type="audio/mpeg"
     ></audio>
     <audio
       id="messageSound"
-      src="iphone_noti.mp3"
+      src="./sound/iphone_noti.mp3"
       preload="auto"
       type="audio/mpeg"
     ></audio>
     <audio
       id="sendSound"
-      src="enviar.wav"
+      src="./sound/enviar.wav"
       preload="auto"
       type="audio/wav"
     ></audio>

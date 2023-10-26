@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     messageElement.className = "item";
     messageElement.innerHTML = `
         <div class="cora">
-            <img class="profile-image" src="Katz.png" alt="Profile Image">
+            <img class="profile-image" src="./img/Katz.png" alt="Profile Image">
         </div>
         <div class="msg autorespuesta">
             <p>${message}</p>
@@ -21,11 +21,10 @@ function simularEscribiendo() {
     const messageElement = document.createElement("div");
     messageElement.className = "item";
     messageElement.innerHTML = `
-        <div class="cora">
-            <img class="profile-image" src="Katz.png" alt="Profile Image">
-        </div>
+       
         <div class="msg">
-            <p><span class="dots">Katz está escribiendo...</span></p>
+            <p><span class="dots">escribiendo...</span></p>
+            
             
         </div>
     `;
@@ -42,8 +41,8 @@ function simularEscribiendo() {
         messageSound.play();
 
         // Llama a chatbotMessage con el mensaje real
-        chatbotMessage("¡Hola! Soy Katz, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedes escribir palabras clave como 'vpn', 'gmail', 'okta' y más, y te proporcionaré respuestas útiles. Estoy listo para asistirte.");
-    }, 9000); // Retraso de 3 segundos
+        chatbotMessage("¡Hola! Katz, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedes escribir palabras clave como 'vpn', 'gmail', 'okta' y más, y te proporcionaré respuestas útiles. Estoy listo para asistirte.");
+    }, 4000); // Retraso de 3 segundos
 }
 
 // Simulación de escritura antes del mensaje inicial
@@ -83,7 +82,7 @@ function botResponse(userInput) {
     },
     {
       keywords: ["gmail", "correo"],
-      respuesta: { mensaje: "Te comento que actualmente tenemos al bot Alfred en slack que hace las siguientes funciones:<br><br><ul><li>Restablecer contraseñas</li><li>Obtener Código 2FA</li><li>Consultar Owner de Grupo</li><li>Crear Grupo</li><li>Unise a Grupo</li></ul><br>Para obtener estas funciones puedes activar Alfred desde <a href='https://app.slack.com/client/T052P4KCD/D047UEH4J9M/app' target='_blank'>este enlace</a>", delay: 3000 }
+      respuesta: { mensaje: "Te comento que actualmente tenemos al bot Alfred en slack que hace las siguientes funciones:<br><br><ul><li>Restablecer contraseñas</li><li>Obtener Código 2FA</li><li>Consultar Owner de Grupo</li><li>Crear Grupo</li><li>Unise a Grupo</li></ul><br>Para obtener estas funciones puedes activar Alfred desde <a href='https://app.slack.com/client/T052P4KCD/D047UEH4J9M/app' target='_blank'>este enlace</a><br><br>Pero, si el tema se trata de restablecer claves a Pickers, puedes solicitarlo dandole click a la imagen <button type='button'><a href='https://peyaplanning.atlassian.net/servicedesk/customer/portal/1/group/632' target='_blank'><img src='./img/Pickers_Jira.png' width='250'></a></button>", delay: 3000 }
     },
     {
       keywords: ["vpn"],
@@ -91,11 +90,11 @@ function botResponse(userInput) {
     },
     {
       keywords: ["okta", "sso"],
-      respuesta: { mensaje: "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.<br><br> También tenemos estas opciones para autogestionarte manualmente<br><button type='button'><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'><img src='okta.jpg' width='250' style='border-radius:10px'></a></button><br><br> Te dejo estas guias en este <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/okta-sso?authuser=1' target0'_blank'>este enlace.</a>", delay: 3000 }
+      respuesta: { mensaje: "Todo lo que necesites con respecto a Okta SSO lo hace el bot Alfred de Slack, para activarlo <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'>este enlace</a>.<br><br> También tenemos estas opciones para autogestionarte manualmente, puede darle click a la imagen.<br><button type='button'><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred?pli=1&authuser=1'target='_blank'><img src='./img/okta.jpg' width='250' style='border-radius:10px'></a></button>", delay: 3000 }
     },
     {
       keywords: ["pc", "jumpcloud"],
-      respuesta: { mensaje: "Si tienes problemas para acceder a la pc, tenemos estas guias para la autegestion desde Jumpcloud:<br><br><ul><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu/jumpcloud-cambio-de-contrase%C3%B1a?pli=1&authuser=1' target='_blank'> Cambio de contraseña en Jumpcloud</a></li><br><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/autenticaci%C3%B3n-en-2-pasos-jumpcloud?pli=1&authuser=1' target='_blank'>Activar Doble Autenticacion</a>.</li></ul>", delay: 3000 }
+      respuesta: { mensaje: "Si tienes problemas para acceder a la pc, tenemos estas guias para la autegestion desde Jumpcloud:<br><br><ul><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu/jumpcloud-cambio-de-contrase%C3%B1a?pli=1&authuser=1' target='_blank'> Cambio de contraseña en Jumpcloud</a></li><br><li><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/autenticaci%C3%B3n-en-2-pasos-jumpcloud?pli=1&authuser=1' target='_blank'>Activar Doble Autenticacion</a></li>", delay: 3000 }
     },
     {
       keywords: ["inconcert", "telefonia"],
@@ -110,7 +109,7 @@ function botResponse(userInput) {
       respuesta: {mensaje: "Todo lo relacionado con Slack tenemos instructivos en este  <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/c%C3%B3mo-usar-slack-gu%C3%ADa-de-inicio-r%C3%A1pido?authuser=1' target='_blank'>este enlace.</a>", delay: 3000 }
     },
     {
-      keywords: ["sap", "power query"],
+      keywords: ["sap", "power query", "excel add in", "complemento sap", "sap analysis"],
       respuesta: {mensaje: "Todo lo relacionado con Sap Add In & Power Query tenemos guias en<br> <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/otros-manuales/power-query-sap-add-in?authuser=1' target='_blank'>este enlace.</a>", delay: 3000 }
     },
     {
@@ -120,7 +119,12 @@ function botResponse(userInput) {
     {
     keywords: ["wifi", "peyalocal", "peyaguest","red"],
     respuesta: {mensaje:"Si tienes problemas para la conexión al Wifi en la oficina tenemos guias en <BR><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/instrucciones-para-conectar-a-las-redes-wi-fi-peya-local-y-peya-guest-y-pro?authuser=1' target='_blank'>este enlace</a> para las redes dependiendo si es usuario interno o invitado.", delay: 3000}
-    }
+    },
+    {
+      keywords: ["audifonos", "auriculares", "headset", "mouse","teclado", "baterias"],
+      respuesta: {mensaje:"Veo que consultas sobre Accesorios, si se te ha roto alguno puedes solicitarlo dandole click a la imagen<br><br><button type='button'><a href='https://peyaplanning.atlassian.net/servicedesk/customer/portal/1/group/4/create/12' targe='_blank'><img src='./img/Accesorios.png' width='200'></a></button><br><br> Pero si crees que pueda ser algun error o configuracion del Windows, como primer filtro te recomendamos ver la cola de actualizaciones en la Lupa, escribes 'Buscar Actualiaciones', las completas y la reincias. Luego de este filtro te sigue dando problemas, puedes solicitar asistencia tecnica en <br><a href='https://peyaplanning.atlassian.net/servicedesk/customer/portal/1/group/4/create/418' target='_blank'>este enlace</a>. ", delay: 3000}
+      }
+
    
   ];
 
@@ -139,7 +143,7 @@ function botResponse(userInput) {
   }
 
   // Si no hay una autorespuesta definida, muestra la respuesta predeterminada sin retraso
-  addMessage("bot", "Lo siento, no comprendo tu pregunta, pero es posible que encuentres lo que necesitas en nuestra sección de 'Instructivos', donde tenemos una amplia variedad de guías disponibles.<br> <br><img src='instructivos.jpg' width=250><br> Puedes acceder directamente a ellas a través de <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos?authuser=1'target='_blank'>este enlace</a>");
+  addMessage("bot", "Lo siento, no comprendo tu pregunta, por favor, escribe algún sinónimo de lo que necesites.<br><br> Además, tambien es posible que encuentres lo que necesitas en nuestra sección de 'Instructivos', donde tenemos una amplia variedad de guías disponibles.<br> <br><img src='./img/instructivos.jpg' width=250><br> Puedes acceder directamente a ellas a través de <a href='https://sites.google.com/pedidosya.com/itsupport/instructivos?authuser=1'target='_blank'>este enlace</a>");
 }
 
 
