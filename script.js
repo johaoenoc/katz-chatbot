@@ -81,7 +81,7 @@ function botResponse(userInput) {
       respuesta: { mensaje: "Claro, ¿en qué puedo ayudarte?", delay: 3000 },
     },
     {
-      keywords: ["gmail", "correo"],
+      keywords: ["gmail", "correo", "google"],
       respuesta: {
         mensaje:
           "Te comento que actualmente tenemos al bot Alfred en slack que hace las siguientes funciones:<br><br><ul><li>Restablecer contraseñas</li><li>Obtener Código 2FA</li><li>Consultar Owner de Grupo</li><li>Crear Grupo</li><li>Unise a Grupo</li></ul><br>Para obtener estas funciones puedes activar Alfred desde <a href='https://app.slack.com/client/T052P4KCD/D047UEH4J9M/app' target='_blank'>este enlace</a><br><br>Pero, si el tema se trata de restablecer claves a Pickers, puedes solicitarlo dandole click a la imagen <button type='button'><a href='https://peyaplanning.atlassian.net/servicedesk/customer/portal/1/group/632' target='_blank'><img src='./img/Pickers_Jira.png' width='250'></a></button>",
