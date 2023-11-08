@@ -84,10 +84,11 @@
     justify-content: center;
     gap: 20px;
     font-family: "Poppins", sans-serif;
+    margin-top: 30px;
   }
 
     .card {
-        width: 150px;
+        width: 152px;
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -114,7 +115,10 @@
         text-decoration: none;
         font-size: 14px;
     }
-    p{
+    p {
+        font-size: 15px;
+    }
+    .container2 p{
         font-size: 10px;
     }
     h2 {
