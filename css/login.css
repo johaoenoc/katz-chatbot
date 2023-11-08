@@ -78,6 +78,49 @@
     background-color: #ff0f4f;
   }
 
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+    .card {
+        width: 150px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .card img {
+        display: block;
+        margin: 0 auto;
+        width: 75px;
+        height: 75px;
+        
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #ff0f4f;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    p{
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+
 
 
   
