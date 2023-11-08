@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .card img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ff0f4f;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+    <div class="card">
+        <img src="./img/forticlient.png" alt="Imagen 1">
+        <h2>Acceso VPN</h2>
+        <p>Configuraciones de forticlient VPN</p>
+        <a href="" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+        <img src="https://yt3.googleusercontent.com/DK3HK15UO8gPMOZtdpki-_9lq2KGnzbqG_66DAcmd3VVIpfQp6JNJ6447R7IfkRenF7RxgUHLA=s900-c-k-c0x00ffffff-no-rj" alt="Imagen 2">
+        <h2>PC Password</h2>
+        <p>Configuraciones de Jumpcloud</p>
+        <a href="#" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+        <img src="https://www.axonius.com/hubfs/Adapter%20Logos/logo.png" alt="Imagen 3">
+        <h2>Okta SSO</h2>
+        <p>Manuales para configurar Okta SSO</p>
+        <a href="#" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+        <img src="data:image/png;base64,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" alt="Imagen 4">
+        <h2>Telefonía</h2>
+        <p>Configuraciones de Inconcert</p>
+        <a href="#" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/871/371/non_2x/google-search-icon-google-product-illustration-free-png.png" alt="Imagen 5">
+        <h2>Google Workspace</h2>
+        <p>Conoce más del mundo de Google</p>
+        <a href="#" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+        <img src="https://cdn0.iconfinder.com/data/icons/Free-Icons-Shimmer-01-Creative-Freedom/256/software.png" alt="Imagen 6">
+        <h2>Software</h2>
+        <p>Instalación Automática de Software</p>
+        <a href="#" class="button">Ver Guía</a>
+    </div>
+</div>
+</body>
+</html>

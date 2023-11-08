@@ -8,89 +8,10 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
-<style>
-  body {
-    background-color: rgb(230, 230, 230);
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #f2f2f2, #f2f2f2, #ffffff, #ffffff, #f2f2f2, #f2f2f2);
-  
-}
-
-    
-  
-
-
-
-  @keyframes customHeartBeat {
-    0% {
-      transform: scale(1);
-    }
-
-    50% {
-      transform: scale(1.1);
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  #openChatbot {
-    animation-name: customHeartBeat;
-    position: fixed;
-    bottom: 20px;
-    /* Ajusta la distancia desde la parte inferior */
-    right: 20px;
-    /* Ajusta la distancia desde la parte derecha */
-    border: none;
-    border-radius: 50px;
-    animation-duration: 2s;
-    /* Duración de la animación */
-    animation-iteration-count: infinite;
-    /* Repetición infinita */
-
-
-  }
-
-
-
-  .container {
-    display: flex;
-    align-items: center;
-
-  }
-
-  .Slack_Link {
-    text-decoration: none;
-    color: aliceblue;
-  }
-
-  .left {
-    flex: 1;
-    margin-top: 100px;
-    padding-right: 250px;
-  
-  }
-
-  .right {
-    flex: 1;
-    
-
-
-  }
-
-  #Alfred {
-    border-radius: 50px;
-  }
-  h1 {
-    font-size: 60px;
-    font-family: 'Poppins', sans-serif;
-    
-  }
-</style>
+<link href="./css/login.css" rel="stylesheet">
 </head>
 
 <body>
@@ -99,7 +20,8 @@
       <h1><strong>¡Prueba Alfred!</strong>
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-        </style> </h1>
+        </style>
+      </h1>
       <p>Alfred está en Slack, capaz de realizar todas las funciones de soporte en las cuentas:<br><br>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
           class="bi bi-patch-check-fill" viewBox="0 0 16 16">
@@ -129,15 +51,8 @@
         src="https://www.lego.com/cdn/cs/catalog/assets/blt21728b222ca27fb5/1/70909_1to1_alfred_360_480.png?width=320"
         width="300" alt="Imagen de Alfred" id="Alfred">
     </div>
+
   </div>
-
-
-
-
-
-
-
-
 
 
   <button type="button" class="btn btn-danger btn-lg" id="openChatbot">

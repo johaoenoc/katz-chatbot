@@ -1,0 +1,83 @@
+
+  body {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f2f2f2, #f2f2f2, #ffffff, #ffffff, #f2f2f2, #f2f2f2);
+
+  }
+
+  @keyframes customHeartBeat {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  #openChatbot {
+    animation-name: customHeartBeat;
+    position: fixed;
+    bottom: 20px;
+    /* Ajusta la distancia desde la parte inferior */
+    right: 20px;
+    /* Ajusta la distancia desde la parte derecha */
+    border: none;
+    border-radius: 50px;
+    animation-duration: 2s;
+    /* Duración de la animación */
+    animation-iteration-count: infinite;
+    /* Repetición infinita */
+
+
+  }
+
+
+
+  .container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .Slack_Link {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .left {
+    flex: 1;
+    margin-top: 100px;
+    padding-right: 250px;
+
+  }
+
+  .right {
+    flex: 1;
+
+
+
+  }
+
+  #Alfred {
+    border-radius: 50px;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .btn {
+    background-color: #ff0f4f;
+  }
+
+
+
+  
