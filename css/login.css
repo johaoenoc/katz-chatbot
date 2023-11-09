@@ -1,4 +1,8 @@
 
+  html {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
   body {
     background-color: rgb(230, 230, 230);
     font-family: 'Poppins', sans-serif;
@@ -127,4 +131,50 @@
 
 
 
-  
+    .popup {
+      display: none;
+      position: fixed;
+      bottom: 100px; /* Ajusta la posición vertical como desees */
+      right: 20px;  /* Ajusta la posición horizontal como desees */
+      background-color: #fff; /* Color de fondo */
+      color: #ff0f4f; /* Color del texto */
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      z-index: 999; /* Asegura que esté en la parte superior */
+      font-size: 12px;
+      
+    }
+    
+    
+   
+    
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+   
+    .close-button {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      cursor: pointer;
+      font-size: 10px; /* Tamaño de fuente para hacer el botón más pequeño */
+      color: #fff; /* Color del icono (puedes personalizarlo) */
+      background: #ff0f4f; /* Color de fondo del botón (puedes personalizarlo) */
+      border: 1px solid #fff; /* Borde del botón (puedes personalizarlo) */
+       /* Hace que el botón sea redondo */
+      width: 15px; /* Ancho del botón */
+      height: 15px; /* Alto del botón */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+    .popup.active {
+      display: block;
+      animation: fadeIn 0.5s;
+    }
+    

@@ -96,9 +96,8 @@
       <a href="#" class="button">Ver Guía</a>
     </div>-->  
     
-  </div> <br>
-  
-<footer class="bg-dark text-light text-center py-3">
+  </div> 
+    <footer class="bg-dark text-light text-center py-3">
     <div class="container">
         <div class="row">
             <div class="">
@@ -114,6 +113,15 @@
     </div>
 </footer>
 
+
+
+<div class="popup" id="popup">
+  <button id="closePopup" class="close-button">x</button>
+  <strong> ¿Te puedo ayudar? 👋     </strong>
+</div> <br>
+
+  
+
   <button type="button" class="btn btn-danger btn-lg" id="openChatbot">
     <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor" class="bi bi-chat-quote-fill"
       viewBox="0 0 16 16" alt="message-bot">
@@ -122,6 +130,32 @@
     </svg>
 
   </button>
+
+  <script>
+   // Muestra el mensaje emergente después de 2 segundos
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    const popup = document.getElementById("popup");
+    popup.classList.add("active");
+  }, 2000);
+
+  // Cierra el mensaje emergente cuando el botón "X" se hace clic
+  const closePopup = document.getElementById("closePopup");
+  closePopup.addEventListener("click", function() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+  });
+
+  // Cierra el mensaje emergente cuando el botón "Katz" se hace clic
+  const openChatbot = document.getElementById("openChatbot");
+  openChatbot.addEventListener("click", function() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+  });
+});
+
+
+  </script>
 
 
 
@@ -134,5 +168,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  
 </body>
 </html>
