@@ -44,6 +44,9 @@
 
 
   .container {
+    width: 1280px;
+    margin: 0 auto;
+    max-width: 95%;
     display: flex;
     align-items: center;
 
@@ -182,4 +185,8 @@
       display: block;
       animation: fadeIn 0.5s;
     }
+
     
+footer {
+  background-color: red;
+}
