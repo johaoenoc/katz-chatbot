@@ -63,6 +63,7 @@
 
   .right {
     flex: 1;
+    
 
 
 
@@ -99,7 +100,11 @@
         text-align: center;
         padding: 20px;
         margin: 10px;
+        transition: transform 0.3s; /* Transición para el efecto de expansión */
     }
+    .card:hover {
+      transform: scale(1.1); /* Escala la tarjeta al 110% del tamaño original al pasar el cursor */
+  }
 
     .card img {
         display: block;
