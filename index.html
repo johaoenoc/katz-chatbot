@@ -1,134 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <title>Portal IT Chatbot</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding-top: 100px;
-            color: #dedede;
-            width: 400px;
-            height: 600px;
-            
-            
-        }
-
-        .wrapper {
-            width: 400px;
-            height: 600px;
-            
-            
-        }
-
-        .box {
-            border: 1px solid #ffffff;
-            padding: 10px 15px;
-            min-height: 400px;
-            max-height: 400px;
-            overflow-y: scroll; /* Agregado para desplazamiento vertical */
-            background-color: #ff0f4f;
-            text-align: center;
-            
-            
-            
-            
-        }
-        .button {
-            margin-top: 50px;
-  line-height: 1;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: .75rem;
-  background-color: var(--clr);
-  color: #fff;
-  border-radius: 10rem;
-  font-weight: 600;
-  padding: .75rem 1.5rem;
-  padding-left: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: background-color .3s;
-}
-
-.button__icon-wrapper {
-  flex-shrink: 0;
-  width: 25px;
-  height: 25px;
-  position: relative;
-  color: var(--clr);
-  background-color: #fff;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-
-.button:hover {
-  background-color: #000;
-}
-
-.button:hover .button__icon-wrapper {
-  color: #000;
-}
-
-.button__icon-svg--copy {
-  position: absolute;
-  transform: translate(-150%, 150%);
-}
-
-.button:hover .button__icon-svg:first-child {
-  transition: transform .3s ease-in-out;
-  transform: translate(150%, -150%);
-}
-
-.button:hover .button__icon-svg--copy {
-  transition: transform .3s ease-in-out .1s;
-  transform: translate(0);
-}
-    </style>
-    <link href="loader.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+<link href="./css/login.css" rel="stylesheet">
+</head>
+
 <body>
-    <div class="wrapper">
-        <div class="box" id="chat-content">
-            <br>
-            <br>
-            <img src="./img/Katz.png" width="100" style="border-radius: 100%;">
-            <h1>Katz</h1>
-            <p>Portal IT Chatbot</p>
-            <a style="--clr: #7808d0" class="button" href="index2.html" id="Continuar">
-                <span class="button__icon-wrapper">
-                    <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15">
-                        <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
-                    </svg>
-                    
-                    <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 14 15">
-                        <path fill="currentColor" d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"></path>
-                    </svg>
-                </span>
-                Continuar
-            </a>
-            
-        </div>
-        
+  <div class="container">
+    <div class="left">
+      <h1><strong>¡Prueba Alfred!</strong>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        </style>
+      </h1>
+      <p>Alfred está en Slack, capaz de realizar todas las funciones de soporte en las cuentas:<br><br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+          <path
+            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+        </svg> Gmail<br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+          <path
+            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+        </svg> Instalación de Software Automática <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+          <path
+            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+        </svg> Okta SSO<br><br>
+
+        <button type="button" class="btn btn-danger btn-md"><a
+            href="https://app.slack.com/client/T052P4KCD/D047UEH4J9M/app" class="Slack_Link"
+            target="_blank">Instalar</a> </button>
     </div>
+    <div class="right">
+      <img
+        src="https://www.lego.com/cdn/cs/catalog/assets/blt21728b222ca27fb5/1/70909_1to1_alfred_360_480.png?width=320"
+        width="300" alt="Imagen de Alfred" id="Alfred">
+    </div>
+
+  </div>
+  <hr>
+
+  <div class="container2">
+    <div class="card">
+      <img src="./img/forticlient.png" alt="Imagen 1" />
+      <h2>Acceso VPN</h2>
+      <p>Configuraciones de forticlient VPN</p>
+      <a href="https://sites.google.com/pedidosya.com/itsupport/instructivos/acceso-a-vpn?authuser=0" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+      <img src="img/jumpcloud.jpg" alt="Imagen 2" />
+      <h2>PC Password</h2>
+      <p>Configuraciones de Jumpcloud</p>
+      <a href="https://sites.google.com/pedidosya.com/itsupport/instructivos/cambiar-contrase%C3%B1a-de-la-compu?authuser=0" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+      <img src="img/okta.webp" alt="Imagen 3" />
+      <h2>Okta SSO</h2>
+      <p>Manuales para configurar Okta SSO</p>
+      <a href="https://sites.google.com/pedidosya.com/itsupport/instructivos/okta-sso?authuser=0" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+      <img src="img/inconcert.png" alt="Imagen 4" />
+      <h2>Telefonía</h2>
+      <p>Configuraciones de Telefonia Inconcert</p>
+      <a href="https://sites.google.com/pedidosya.com/itsupport/telefon%C3%ADa-virtual?authuser=0" class="button">Ver Guía</a>
+    </div>
+    <div class="card">
+      <img
+        src="img/google-search-icon-google-product-illustration-free-png.webp"
+        alt="Imagen 5"
+      />
+      <h2>Google</h2>
+      <p>Conoce más del mundo de Google</p>
+      <a href="https://sites.google.com/pedidosya.com/itsupport/instructivos/google-workspace?authuser=0" class="button">Ver Guía</a>
+    </div>
+  <div class="card">
+      <img src="img/software.png" alt="Imagen 6" />
+      <h2>Software</h2>
+      <p>Instalación de Software</p>
+      <a href="https://sites.google.com/pedidosya.com/itsupport/instructivos/como-usar-el-bot-alfred/ver-pasos-para-instalar-software-en-el-equipo-via-alfed-has-clic-aqui" class="button">Ver Guía</a>
+    </div>
+    
+  </div> <br><br>
+  <footer>
+    <div class="footer-section">
+        <p>#GeneramosImpacto</p>
+        <img src="./img/generamosimpacto-iconio.png" alt="Generamos Impacto">
+    </div>
+    <div class="footer-section">
+        <p>#JugamosEnEquipo</p>
+        <img src="./img/jugamosenequipo-icono.png" alt="Jugamos En Equipo">
+    </div>
+    <div class="footer-section">
+        <p>#LohacemosYa</p>
+        <img src="./img/lohacemosya-icono.png" alt="Lo Hacemos Ya">
+    </div>
+</footer>
+   <footer class=" text-light text-center py-3" id="futer2">
+    <div class="container-footer">
+        <div class="row">
+            <div class="">
+                <div>
+                    <a href="https://www.google.com/appsstatus/dashboard/#hl=es&v=status" target="_blank" class="btn btn-info">Google Status</a>
+                    <a href="https://sites.google.com/u/0/d/1nFLnXCDZajj57NrJ7-DGnaFgJgrgbwrr/p/1yDYKbG7bmrqMmUAmABGABoQTsfs9icd1/preview" target="_blank" class="btn btn-info">Link de Accesos por Área</a>
+                    <a href="https://peyaplanning.atlassian.net/servicedesk/customer/portal/1" target="_blank" class="btn btn-info">Ticketera IT</a>
+                    <a href="https://sites.google.com/u/0/d/1nFLnXCDZajj57NrJ7-DGnaFgJgrgbwrr/p/1_MU8ATYBNt17pyisuh3jZy8pKcEyL8JG/preview" target="_blank" class="btn btn-info">¡Conoce nuestro equipo!</a>
+                    <a href="https://signature.peyait.app/" target="_blank" class="btn btn-info">Firma de mail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<div class="popup" id="popup">
+  <button id="closePopup" class="close-button">x</button>
+  <strong> ¿Te puedo ayudar? 👋     </strong>
+</div> <br>
+
+  
+
+  <button type="button" class="btn btn-danger btn-lg" id="openChatbot" alt="message-bot">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor" class="bi bi-chat-quote-fill"
+      viewBox="0 0 16 16" alt="message-bot">
+      <path
+        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z" />
+    </svg>
+
+  </button>
+
+  <div class="modal" id="feedbackModal">
+    <div class="modal-content">
+        <h2>¡Danos tu opinión!</h2>
+        <p>Por favor, toma un momento para proporcionar tu feedback:</p>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" placeholder="Correo Electrónico">
+        <br><br>
+        <p>Puntuación del diseño de la página:</p>
+        <label for="design1">1</label>
+        <input type="radio" name="design" id="design1" value="1">
+        <label for="design2">2</label>
+        <input type="radio" name="design" id="design2" value="2">
+        <!-- Agrega más opciones de puntuación si es necesario -->
+        <br><br>
+        <p>Puntuación del chatbot de ayuda:</p>
+        <label for="chatbot1">1</label>
+        <input type="radio" name="chatbot" id="chatbot1" value="1">
+        <label for="chatbot2">2</label>
+        <input type="radio" name="chatbot" id="chatbot2" value="2">
+        <!-- Agrega más opciones de puntuación si es necesario -->
+        <br><br>
+        <label for="comments">Comentarios:</label>
+        <textarea id="comments" rows="4" placeholder="Escribe tus comentarios aquí"></textarea>
+        <br><br>
+        <button id="closeModal" class="close-button">Cerrar</button>
+    </div>
+</div>
+  <script src="popup-message.js"></script>
+  <script>
+    document.getElementById("openChatbot").addEventListener("click", function () {
+      // Abre el chatbot en una nueva ventana emergente
+      window.open("https://chatbot-portal-it.netlify.app/login", "Chatbot", "width=400,height=600");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script> 
 </body>
 </html>

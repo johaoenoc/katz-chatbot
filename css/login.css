@@ -185,9 +185,26 @@
       display: block;
       animation: fadeIn 0.5s;
     }
+    footer {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+  }
 
+  .footer-section {
+      display: inline-block;
+      width: 33%;
+  }
+
+  .footer-section img {
+      width: 50px;
+      height: auto;
+      
+  }
+  #futer2 {
+    background-color: #f2f2f2;
+  }
     
-footer {
-  background-color: red;
-}
+
 
