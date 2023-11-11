@@ -18,6 +18,9 @@ body {
 
 .wrapper {
     width: 370px;
+    background-color: rgb(238, 238, 238);
+    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+    background-repeat: no-repeat;
     
 }
 
