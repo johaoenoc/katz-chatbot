@@ -1,215 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: small;
-    color: rgb(225, 225, 225);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: small;
+  color: rgb(225, 225, 225);
 }
 
 .wrapper {
-    width: 370px;
-    background-color: rgb(238, 238, 238);
-    background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
-    background-repeat: no-repeat;
-    
+  width: 370px;
+  background-color: rgb(238, 238, 238);
+  background-size: cover; /* Para ajustar la imagen al tamaño del contenedor */
+  background-repeat: no-repeat;
 }
 
 .wrapper .title {
-    background: #ff0f4f;
-    color: rgb(232, 232, 232);
-    line-height: 2.5;
-    border-radius: 5px 5px 0 0;
-    
-    font-size: 16px;
-      text-align: center;
-    
-    display: flex;
-    align-items: center; 
+  background: #ff0f4f;
+  color: rgb(232, 232, 232);
+  line-height: 2.5;
+  border-radius: 5px 5px 0 0;
+
+  font-size: 16px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
 }
 
-.cora .profile-image{
-    width: 40px; /* Tamaño de la imagen de perfil */
-    height: 40px;
-    border-radius: 50%; /* Crea un efecto de círculo */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    margin-left: 10px;
-
+.cora .profile-image {
+  width: 40px; /* Tamaño de la imagen de perfil */
+  height: 40px;
+  border-radius: 50%; /* Crea un efecto de círculo */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  margin-left: 10px;
 }
 .title .profile-image {
-    width: 40px; /* Tamaño de la imagen de perfil */
-    height: 40px;
-    border-radius: 50%; /* Crea un efecto de círculo */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    margin-left: 10px;
+  width: 40px; /* Tamaño de la imagen de perfil */
+  height: 40px;
+  border-radius: 50%; /* Crea un efecto de círculo */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  margin-left: 10px;
 }
 
 .wrapper .box {
-    border: 1px solid #efefef;
-    padding: 10px 15px;
-    min-height: 400px;
-    max-height: 400px;
-    overflow-y: scroll; /* Agregado para desplazamiento vertical */
+  border: 1px solid #efefef;
+  padding: 10px 15px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: scroll; /* Agregado para desplazamiento vertical */
 }
 
 .wrapper .box .item {
-    display: flex;
-    margin: 10px 0;
+  display: flex;
+  margin: 10px 0;
 }
 
-
 .wrapper .box .item .msg {
-    padding: 20px;
-    
-    border-radius: 10px;
-    max-width: 90%;
-    background: #ff0f4f;
-    color: #efefef;
-    
-    background-color:   #ff0f4f ;
+  padding: 20px;
+
+  border-radius: 10px;
+  max-width: 90%;
+  background: #ff0f4f;
+  color: #efefef;
+
+  background-color: #ff0f4f;
 }
 
 .wrapper .box .item .msg p {
-    margin: 0; /* Elimina el margen predeterminado en los párrafos */
+  margin: 0; 
 }
 
 .wrapper .box .item.right {
-    justify-content: flex-end; /* Alinea los mensajes del usuario a la derecha */
+  justify-content: flex-end; 
 }
 
 .wrapper .box .item.right .msg {
-    background: #ffffff;
-    color: #333;
-    
-
+  background: #ffffff;
+  color: #333;
 }
 
 .wrapper .typing-area {
-    width: 100%;
-    background: #efefef;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  width: 100%;
+  background: #efefef;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .wrapper .typing-area .input-field {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .wrapper .typing-area .input-field input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    outline: none;
-    padding-right: 70px;
-    font-family: 'Poppins', sans-serif;
-    transition: 0.3s all ease;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  padding-right: 70px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s all ease;
 }
 
 .wrapper .typing-area .input-field input:focus {
-    border-color: #ff0f4f;
+  border-color: #ff0f4f;
 }
 
 .wrapper .typing-area .input-field button {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 1px solid #ff0f4f;
-    padding: 5px 10px;
-    border-radius: 3px;
-    color: #ff0f4f;
-    outline: none;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s all ease;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid #ff0f4f;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #ff0f4f;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s all ease;
 }
 
 .wrapper .typing-area .input-field button:hover {
-    background: #ff0f4f;
-    color: white;
+  background: #ff0f4f;
+  color: white;
 }
 
 .wrapper .typing-area .input-field input:valid ~ button {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 .status {
-    display: flex;
-    align-items: center;
-    margin-left: -70px;
-    margin-top: 32px; 
-    
+  display: flex;
+  align-items: center;
+  margin-left: -70px;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(130, 228, 130);
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.text {
+  color: rgb(236, 192, 192);
+  font-size: 9px;
+  padding-left: 5px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+@keyframes dot-animation {
+  0% {
+    opacity: 0;
   }
-  
-  .dot {
-    width: 8px;
-    height: 8px;
-    background-color: rgb(130, 228, 130);
-    border-radius: 50%;
-    margin-left: 30px;
+  33% {
+    opacity: 1;
   }
-  
-  .text {
-    color: rgb(236, 192, 192);
-    font-size: 9px;
-    padding-left: 5px; /* Ajusta el tamaño de fuente según tus preferencias */
-    
+  66% {
+    opacity: 1;
   }
-  @keyframes dot-animation {
-    0% {
-      opacity: 0;
-    }
-    33% {
-      opacity: 1;
-    }
-    66% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
-  /* Aplica la animación a la clase "dots" */
-   .dots {
-    
-    animation: dot-animation 1.5s infinite;
-    
-   
-    
-  
-  }
-  a {
-    color: #ff0f4f; /* Color predeterminado */
-    text-decoration: none; /* Quita el subrayado */
-    background-color:#efefef ;
-    padding: 2px;
-    border-radius: 20px;
-  }
-  
-  a:hover {
-    font-weight: bold; /* Hace el texto en negrita al pasar el ratón sobre el enlace */
-  }
-  
-  
-  
-  
-  
-  
-  
+}
+
+/* Aplica la animación a la clase "dots" */
+.dots {
+  animation: dot-animation 1.5s infinite;
+}
+a {
+  color: #ff0f4f; /* Color predeterminado */
+  text-decoration: none; /* Quita el subrayado */
+  background-color: #efefef;
+  padding: 2px;
+  border-radius: 20px;
+}
+
+a:hover {
+  font-weight: bold; /* Hace el texto en negrita al pasar el ratón sobre el enlace */
+}
