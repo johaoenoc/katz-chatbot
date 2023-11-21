@@ -138,7 +138,7 @@ function botResponse(userInput) {
     },
     {
       keywords: [
-        "sap",
+        "addin",
         "power query",
         "excel add in",
         "complemento sap",
@@ -181,6 +181,20 @@ function botResponse(userInput) {
         delay: 3000,
       },
     },
+    {
+      keywords: ["jira"],
+      respuesta: { mensaje: "<p>Tenemos las siguientes guías para Jira Service Management:</p><br><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/jira-service-management/agregar-personas-a-proyectos?authuser=0' target='_blank'>Agregar personas a un proyecto</a><br><br><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/jira-service-management/agregar-organizaciones-a-un-proyecto?authuser=0' target='_blank'>Agregar organizaciones a proyectos</a><br><br><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/jira-service-management/crear-nueva-organizaci%C3%B3n?authuser=0' target='_blank'>Crear nueva organización</a><br><br><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/jira-service-management/agregar-organizaciones-a-un-proyecto?authuser=0' target='_blank'>Agregar cliente a organización</a>"
+      , delay: 3000 },
+    },
+    {
+      keywords: ["tableau", "salesforce", "backoffice", "looker", "monday", "datadog", "bitly", "adjust", "ariba", "braze", "sap", "thinkcell", "adobe", "links de accesos"],
+      respuesta: { mensaje: "<p>Para encontrar el acceso que buscas debes entrar en <a href='https://sites.google.com/pedidosya.com/itsupport/links-de-accesos-por-%C3%A1rea?authuser=0' target='_blank'>este enlace</a> y seleccionar el departamento que estas; ahí encontrarás todos los accesos.</p>", delay: 3000 },
+    },
+    {
+      keywords: ["office", "microsoft", "licencia de office"],
+      respuesta: { mensaje: "¿Cómo activar mi licencia de Office? <br><br> Para activarla te dejo la guía en <br><a href='https://sites.google.com/pedidosya.com/itsupport/instructivos/otros-manuales/microsoft-office' target='_blank'>este enlace</a>.", delay: 3000 },
+    }
+    
   ];
 
   // Verifica si hay una autorespuesta definida para la entrada del usuario
