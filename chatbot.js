@@ -224,3 +224,4 @@ userInput.addEventListener("keyup", (event) => {
     sendButton.click();
   }
 });
+
